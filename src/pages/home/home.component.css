@@ -1,0 +1,203 @@
+
+
+main{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'PT Sans', sans-serif;
+  background-color: #252529;
+  color: #fff;
+  line-height: 1.6;
+}
+
+#content{
+  background-image: url(https://jolly-kalam-23776e.netlify.app/mytunes/img/showcase.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  text-align: center;
+}
+
+#content h1 {
+  font-size: 4rem;
+  padding-top: 25vh;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#content h2{
+  font-size: 2rem;
+  text-align: center;
+}
+
+#p1{
+  font-size: 1.3rem;
+  text-align: center;
+  padding-left: 125px;
+  padding-right: 125px;
+}
+
+
+#music{
+  margin: 0px;
+  text-align: center;
+  padding-top: 50px;
+  height: 198vh;
+}
+
+#music h2{
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+#music h3{
+  font-size: 2rem;
+}
+
+#p2{
+  font-size: 1.3rem;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#nav2{
+  background-color: #b90415;
+  padding: 1rem;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#video{
+  margin: 0px;
+  text-align: center;
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-top: 50px;
+  background: #f4f4f4;
+  color: #333;
+  height: 210vh;
+}
+
+#video h3{
+  font-size: 2rem;
+}
+
+#p3{
+  font-size: 1.3rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#nav3{
+  background-color:#103063;
+  padding: 1rem;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#entertainment{
+  margin: 0px;
+  padding: 10rem 0;
+  text-align: center;
+  background-image: url(https://jolly-kalam-23776e.netlify.app/mytunes/img/section-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height:35vh;
+}
+
+#entertainment h3{
+  font-size: 2rem;
+}
+
+#p4{
+  font-size: 1.3rem;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#gift-card{
+  margin: 0px;
+  text-align: center;
+  background: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 60vh;
+}
+
+#img-giftcard{
+  height: 50vh;
+  width: 600px;
+}
+
+#giftcard-img{
+  text-align: right;
+  width: 800px;
+  padding-top: 50px;
+}
+
+#giftcard-text{
+  text-align: left;
+  width: 800px;
+  padding-top: 50px;
+}
+
+#nav5{
+  text-decoration: none;
+  color: #333;
+}
+
+#giftcard-text h2{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#p5{
+  padding-right: 150px;
+}
+
+#options{
+  margin: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+}
+
+ul{
+  width: 200px;
+  text-align: left;
+  list-style-type: none;
+}
+
+ul li:first-child{
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: #444 solid 1px;
+  margin-bottom: 1rem;
+}
+
+li a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #ccc;
+}
+
+#footer{
+  margin: 0px;
+  text-align: center;
+  background-color: #333;
+  height: 3vh;
+  padding: 20px;
+}

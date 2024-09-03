@@ -1,0 +1,33 @@
+<main>
+  <div class="container">
+
+    <!-- Login Form -->
+    <form  [formGroup]="profileForm" (ngSubmit)="handleLogin()">
+      <h1 style="align-items: center;">Log In</h1>
+      <div class="inp">
+        <input type="email" formControlName="email" name="email" />
+        <label [ngClass]="class" for="Email">Email-id</label>
+      </div>
+      <div class="text-warning" *ngIf="profileForm.controls['email'].invalid && (isFormsubmitted || profileForm.controls['email'].touched || profileForm.controls['email'].dirty)">
+        <span *ngIf="profileForm.controls['email'].hasError('email')">Enter a Valid Email-id</span>
+        <span *ngIf="profileForm.controls['email'].hasError('required')">Please fill out this field.</span>
+      </div>
+      <br>
+      <div class="inp">
+        <input type="password" formControlName="password" name="password" />
+        <label [ngClass]="class" for="password">Password</label>
+      </div>
+      <div class="text-warning" *ngIf="profileForm.controls['password'].invalid && (isFormsubmitted || profileForm.controls['password'].touched || profileForm.controls['password'].dirty)">
+        <span *ngIf="profileForm.controls['password'].hasError('required')">Please fill out this field.</span>
+        <span *ngIf="profileForm.controls['password'].hasError('minlength')">Password Must Contain Atleast 8 Character</span>
+      </div>
+      <br>
+      <br>
+      <button type="submit" [disabled]="!profileForm.valid">Login</button><br>
+      <a (click)="navFun()" style="color: azure; cursor: pointer;">Already have an account? Sign up</a>
+    </form>
+
+
+  </div>
+  <div class="pic"></div>
+</main>

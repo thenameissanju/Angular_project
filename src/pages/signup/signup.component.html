@@ -1,0 +1,43 @@
+<main>
+  <div class="container">
+
+
+   <!-- Register Form -->
+   <form  [formGroup]="registerForm" (ngSubmit)="handleRegister()">
+    <h1>Register!</h1>
+    <div class="inp">
+      <input type="text" formControlName="username" name="username" />
+      <label [ngClass]="class" for="username">User Name</label>
+    </div>
+    <div class="text-warning" *ngIf="registerForm.controls['username'].touched && (isFormsubmitted || registerForm.controls['username'].invalid || registerForm.controls['username'].dirty)">
+      <span *ngIf="registerForm.controls['username'].hasError('required')">Please fill out this field.</span>
+      <span *ngIf="registerForm.controls['username'].hasError('minlength')">UserName must Contain Atleast 5 Character</span><br>
+      <span *ngIf="registerForm.controls['username'].hasError('pattern')">UserName Cannot Contain Special Character</span>
+    </div>
+    <br>
+    <div class="inp">
+      <input type="email" formControlName="email" name="password" />
+      <label [ngClass]="class" for="Email">Email-id</label>
+    </div>
+    <div class="text-warning" *ngIf="registerForm.controls['email'].touched && (isFormsubmitted || registerForm.controls['email'].invalid || registerForm.controls['email'].dirty)">
+      <span *ngIf="registerForm.controls['email'].hasError('email')">Enter a Valid Email</span>
+      <span *ngIf="registerForm.controls['email'].hasError('required')">Please fill out this field.</span>
+    </div>
+    <br>
+    <div class="inp">
+      <input type="password" formControlName="password" name="password" />
+      <label [ngClass]="class" for="Password">Password</label>
+    </div>
+    <div class="text-warning" *ngIf="registerForm.controls['password'].invalid && (isFormsubmitted || registerForm.controls['password'].touched || registerForm.controls['password'].dirty)">
+      <span *ngIf="registerForm.controls['password'].hasError('required')">Please fill out this field.</span>
+      <span *ngIf="registerForm.controls['password'].hasError('minlength')">Password Must Contain Atleast 8 Character</span>
+    </div>
+    <br>
+    <br>
+    <button type="submit" [disabled]="!registerForm.valid">Sign Up</button> <br>
+    <a (click)="navFun()" style="color: azure; cursor: pointer;">Already have an account? Login</a>
+  </form>
+
+  </div>
+  <div class="pic"></div>
+</main>
